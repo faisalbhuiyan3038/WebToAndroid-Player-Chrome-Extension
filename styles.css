@@ -1,0 +1,53 @@
+#video-handler-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 48px;
+  height: 48px;
+  background: none;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 999999;
+  font-size: 24px;
+  transition: opacity 0.3s;
+}
+
+#video-handler-button:hover {
+  opacity: 1;
+}
+
+#video-handler-menu {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 8px;
+  padding: 8px;
+  z-index: 999998;
+  max-height: 300px;
+  overflow-y: auto;
+  color: white;
+  max-width: 300px;
+  width: auto;
+}
+
+.stream-item {
+  padding: 8px 16px;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stream-item:last-child {
+  border-bottom: none;
+}
+
+.stream-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
